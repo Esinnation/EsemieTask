@@ -6,12 +6,12 @@ const Hero = ({status,date,rate}) => {
   return (
     <View className='mt-7'>
       {/* Clock */}
-      <TouchableOpacity className='self-end mb-3 relative'>
+      <TouchableOpacity className='self-end z-50 mb-3 mr-5 relative'>
         <FontAwesome6 name="clock" size={18} color="black" onPress={()=>setShowInfo(!showInfo)} />
         {
           showInfo &&
           <View className='absolute z-50 bg-white border border-[#D1D1D1] top-7 py-3 rounded '>
-            <View className='px-2'>
+            <View className='px-2 '>
               <Text className='text-[#A6A6A6] mb-1'>May 2020</Text>
               <Text className='text-[#2364A4] mb-3'>John Joseph</Text>
             </View>
